@@ -343,7 +343,7 @@ header {
     display: grid;
     width: 90%;
     margin: auto;
-    padding: 250px 0 0 0; }
+    padding: 150px 0 0 0; }
     #about .about-content .about-left {
       position: relative; }
       #about .about-content .about-left img {
@@ -503,6 +503,7 @@ header {
           width: 100%;
           position: relative; }
           #projects .projects-content .project-titles .project-title .img-wrapper .img-crop img {
+            height: 100%;
             position: absolute;
             top: 50%;
             left: 50%;

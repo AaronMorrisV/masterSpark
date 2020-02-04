@@ -349,7 +349,7 @@ header:hover .header-bg{
         display: grid;
         width:90%;
         margin:auto;
-        padding: 250px 0 0 0;
+        padding: 150px 0 0 0;
         .about-left{
             position: relative;
             img{
@@ -454,7 +454,7 @@ header:hover .header-bg{
                     top:50%;
                     right:0;
                     transform: translateY(-50%);
-                    opacity:0.7;
+                    opacity:0.7     ;
                     overflow: hidden;
                     z-index:0;
                     .img-crop{
@@ -462,6 +462,7 @@ header:hover .header-bg{
                         width:100%;
                         position:relative;
                         img{
+                            height:100%;
                             position: absolute;
                             top:50%;
                             left:50%;

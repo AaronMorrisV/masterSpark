@@ -121,7 +121,7 @@
                 <div class = "project-title project-title-right">
                     <div class = "img-wrapper img-wrapper-right paroller-project-image">
                         <div class = "img-crop">
-                            <img src = "assets/smpl1.jpeg">
+                            <img src = "assets/smpl1.jpeg" class = "paroller-project-image-inner">
                         </div>
                     </div>
                     <div class = "project-text-wrapper">
@@ -135,7 +135,7 @@
                 <div class = "project-title project-title-left">
                     <div class = "img-wrapper img-wrapper-left paroller-project-image">
                         <div class = "img-crop">
-                            <img src = "assets/smpl2.jpeg">
+                            <img src = "assets/smpl2.jpeg" class = "paroller-project-image-inner">
                         </div>
                     </div>
                     <div class = "project-text-wrapper">
@@ -149,7 +149,7 @@
                 <div class = "project-title project-title-right">
                     <div class = "img-wrapper img-wrapper-right paroller-project-image">
                         <div class = "img-crop">
-                            <img src = "assets/smpl3.jpeg">
+                            <img src = "assets/smpl3.jpeg" class = "paroller-project-image-inner">
                         </div>
                     </div>
                     <div class = "project-text-wrapper">
@@ -163,7 +163,7 @@
                 <div class = "project-title project-title-left">
                     <div class = "img-wrapper img-wrapper-left paroller-project-image">
                         <div class = "img-crop">
-                            <img src = "assets/smpl4.jpeg">
+                            <img src = "assets/smpl4.jpeg" class = "paroller-project-image-inner">
                         </div>
                     </div>
                     <div class = "project-text-wrapper">
@@ -258,8 +258,13 @@
         //transition: 'transform 0.2s ease-in' // CSS transition
     });
     $(".paroller-project-image, [data-paroller-factor]").paroller({
-        factor: 0.2,            // multiplier for scrolling speed and offset
-        factorXs: 0.2,           // multiplier for scrolling speed and offset
+        factor: 0.1,            // multiplier for scrolling speed and offset
+        type: 'foreground',     // background, foreground
+        direction: 'vertical', // vertical, horizontal
+        //transition: 'transform 0.2s ease-in' // CSS transition
+    });
+    $(".paroller-project-image-inner, [data-paroller-factor]").paroller({
+        factor: 0.1,            // multiplier for scrolling speed and offset
         type: 'foreground',     // background, foreground
         direction: 'vertical', // vertical, horizontal
         //transition: 'transform 0.2s ease-in' // CSS transition
