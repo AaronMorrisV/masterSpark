@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href = "main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,500,600,700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel = "stylesheet">
+    <!--<link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">-->
+    <!-- Scroll 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
+    <script src="jquery.paroller.min.js"></script>
+    <script src = "relax.js"></script>
+    
+    <title>Master Spark</title>
+</head>
+<body>
+    <header>
+        <div class = "header-bg"></div>
+        <div class = "header-left">
+            <a href = "index.html" ><img class = "logo" id = "logoBlack" src = "assets/logo.png"></a>
+            <a href = "index.html"><img class = "logo" id = "logoWhite" src = "assets/logoWhite.png"></a>
+        </div>
+        <div class = "header-right">
+            <div class="burger" id = "burger" onclick="burgerToggle(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "index.html">About</a></li>
+                <li><a href = "index.html">Projects</a></li>
+                <li><a href = "index.html">Masterclasses</a></li>
+                <li><a href = "index.html">Contact</a></li>      
+
+            </ul>
+        </div>
+        
+    </header>
+    <section id = "mobile-navigation-overlay" class = "mobile-navigation-overlay">
+        <div class = "mobile-nav-left">
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "index.html">About</a></li>
+                <li><a href = "index.html">Projects</a></li>
+                <li><a href = "index.html">Masterclasses</a></li>
+                <li><a href = "index.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class = "mobile-nav-right">
+            <div class = "socials">
+                <i class="fab fa-2x fa-facebook-f"></i>
+                <i class="fab fa-2x fa-instagram"></i>
+                <h4>hello@masterspark.co.uk</h4>
+            </div>
+        </div>
+    </section>
+    <section id = "lander">
+        <div class = "lander-bg parallax-vert"></div>
+        <div class = "lander-content paroller">
+            <div class = "lander-left">
+                <h1>Master yourself with us.</h1 >
+                <div class = "btn-wrapper">
+                    <div class = "btn">
+                        <a href = "#"><span class = "btn-text">Find a Masterclass</span> &nbsp; +</a>
+                    </div>
+                    <div class = "btn">
+                        <a href = "#"><span class = "btn-text">Projects</span> &nbsp; +</a>
+                    </div>
+                </div>
+            </div>
+            <div class = "lander-right">
+                <img src = "assets/fbLogoB.png">
+                <img src = "assets/netflixLogoB.png">
+                <img src = "assets/amazonLogoB.png">
+                <img src = "assets/googleLogoB.png">
+            </div>
+        </div>
+    </section>
+    <section id = "about">
+        <div class = "scroll-title-wrapper">
+            <h3 class = "paroller-scroll-title">ABOUT US</h3>
+        </div>
+        <div class = "about-content">
+            <div class = "about-right paroller">
+                <h3>ABOUT US</h3>
+                <p>
+                    We are an innovative network using proven methods to bring modern and contemporary knowledge to businesses, professionals and education.
+                    <br> <br>
+                    Our aim is to introduce useful tools and new ways of thinking into existing establishments in order to increase efficiency and quality of work.
+                </p>
+            </div>
+            <div class = "about-left">
+                <img src = "assets/img1.png" class = "about-img-1">
+                <img src = "assets/img2.png" class = "about-img-2">
+            </div>
+        </div>
+    </section>
+    <section id = "partners">
+        <div class = "scroll-title-wrapper">
+            <h3 class = "paroller-scroll-title">OUR PARTNERS</h3>
+        </div>
+        <div class = "partners-content">
+            <h3>Our Partners</h3>
+            <div class = "partners-carousel">
+                <img src = "assets/fbLogoB.png">
+                <img src = "assets/netflixLogoB.png">
+                <img src = "assets/amazonLogoB.png">
+                <img src = "assets/googleLogoB.png">
+            </div>
+        </div>
+    </section>
+    <section id = "projects">
+        <div class = "projects-content">
+            <div class = "project-titles">
+                <h3>Our Projects</h3>
+                <div class = "vertical-line"></div>
+                <div class = "project-title project-title-right">
+                    <div class = "img-wrapper img-wrapper-right paroller-project-image">
+                        <div class = "img-crop">
+                            <img src = "assets/smpl1.jpeg">
+                        </div>
+                    </div>
+                    <div class = "project-text-wrapper">
+                        <a href = "#">Lorem Ipsum Dolor</a>
+                        <div class = "btn">
+                            <a href = "#"><span class = "btn-text">View Details</span> &nbsp; +</a>
+                        </div>
+                    </div>
+                </div>
+                <div class = "vertical-line"></div>
+                <div class = "project-title project-title-left">
+                    <div class = "img-wrapper img-wrapper-left paroller-project-image">
+                        <div class = "img-crop">
+                            <img src = "assets/smpl2.jpeg">
+                        </div>
+                    </div>
+                    <div class = "project-text-wrapper">
+                        <a href = "#">Sit Amet Consectetur</a>
+                        <div class = "btn">
+                            <a href = "#"><span class = "btn-text">View Details</span> &nbsp; +</a>
+                        </div>
+                    </div>
+                </div>
+                <div class = "vertical-line"></div>
+                <div class = "project-title project-title-right">
+                    <div class = "img-wrapper img-wrapper-right paroller-project-image">
+                        <div class = "img-crop">
+                            <img src = "assets/smpl3.jpeg">
+                        </div>
+                    </div>
+                    <div class = "project-text-wrapper">
+                        <a href = "#">Adipiscing Elit</a>
+                        <div class = "btn">
+                            <a href = "#"><span class = "btn-text">View Details</span> &nbsp; +</a>
+                        </div>
+                    </div>
+                </div>
+                <div class = "vertical-line"></div>
+                <div class = "project-title project-title-left">
+                    <div class = "img-wrapper img-wrapper-left paroller-project-image">
+                        <div class = "img-crop">
+                            <img src = "assets/smpl4.jpeg">
+                        </div>
+                    </div>
+                    <div class = "project-text-wrapper">
+                        <a href = "#">Aenean Ac</a>
+                        <div class = "btn">
+                            <a href = "#"><span class = "btn-text">View Details</span> &nbsp; +</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "images">
+                <!--<div id = "project-img1" class = "img-wrapper img-wrapper-right">
+                    <div class = "img-crop">
+                        <img src = "assets/smpl1.jpeg">
+                    </div>
+                </div>
+                <div class = "img-wrapper img-wrapper-left">
+                    <div class = "img-crop">
+                        <img src = "assets/smpl2.jpeg">
+                    </div>
+                </div>
+                <div class = "img-wrapper img-wrapper-right">
+                    <div class = "img-crop">
+                        <img src = "assets/smpl3.jpeg">
+                    </div>
+                </div>
+                <div class = "img-wrapper img-wrapper-left">
+                    <div class = "img-crop">
+                        <img src = "assets/smpl4.jpeg">
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    /*var images = document.getElementsByClassName('thumbnail');
+
+    console.log(images.length)
+    new simpleParallax(images, {
+        orientation: 'up'
+    });
+    var vertParallaxImages = document.querySelectorAll('.parallax-vert');
+    new simpleParallax(vertParallaxImages, {
+        scale: 1.5
+    });*/
+    
+    //$("header").addClass("header-active");
+    $(window).on("scroll", function() {
+        if($(window).scrollTop() > 200) {
+            $("header").addClass("header-active");
+        } else {
+            $("header").removeClass("header-active");
+        }
+    });
+    y=0
+    function burgerToggle(x) {
+        y+=1
+        x.classList.toggle("burger-active");
+        $("#mobile-navigation-overlay").toggleClass("mobile-navigation-overlay-active");
+        if(y%2!=0){
+            $('body').css("overflow","hidden");
+            $("header").addClass("header-active");
+            $("#mobile-navigation-overlay").css("opacity","1");
+        }
+        else{
+            $('body').css("overflow","visible");
+            if($(window).scrollTop() < 200){
+                $("header").removeClass("header-active");
+            }
+            setTimeout(function(){
+                $("#mobile-navigation-overlay").css("opacity","0");
+            }, 850);
+        }
+    }
+    /*
+    $('.verti-paroller').paroller()
+
+    $(".paroller, [data-paroller-factor]").paroller({
+        factor: 0.2,            // multiplier for scrolling speed and offset
+        factorXs: 0.15,           // multiplier for scrolling speed and offset
+        type: 'foreground',     // background, foreground
+        direction: 'vertical', // vertical, horizontal
+        //transition: 'transform 0.2s ease-in' // CSS transition
+    });
+    */
+    $(".paroller-scroll-title, [data-paroller-factor]").paroller({
+        factor: 0.2,            // multiplier for scrolling speed and offset
+        factorXs: 0.1,           // multiplier for scrolling speed and offset
+        type: 'foreground',     // background, foreground
+        direction: 'horizontal', // vertical, horizontal
+        //transition: 'transform 0.2s ease-in' // CSS transition
+    });
+    $(".paroller-project-image, [data-paroller-factor]").paroller({
+        factor: 0.2,            // multiplier for scrolling speed and offset
+        factorXs: 0.2,           // multiplier for scrolling speed and offset
+        type: 'foreground',     // background, foreground
+        direction: 'vertical', // vertical, horizontal
+        //transition: 'transform 0.2s ease-in' // CSS transition
+    });
+    
+    //var rellax = new Rellax('.rellax');
+    // /https://tgomilar.github.io/paroller.js/#demo
+
+    
+</script>
