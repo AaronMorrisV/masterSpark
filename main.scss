@@ -397,9 +397,10 @@ header:hover .header-bg{
         top:45%;
         transform: translateY(-50%);
         opacity: 0.1;
-        h3{
+        h6{
             color: white;
             margin-left:100px;
+            text-align: right;
         }
     }
     .about-content{
@@ -523,7 +524,8 @@ header:hover .header-bg{
     padding:200px 0 125px 0;
     position: relative;
     .scroll-title-wrapper{
-        top:240px;
+        top:320px;
+        text-align:right;
     }
     .partners-content{
         margin:auto;
@@ -680,7 +682,7 @@ header:hover .header-bg{
     position: relative;
     h3{
         font-size: 16px;
-        margin-bottom:50px;
+        margin-bottom:30px;
         letter-spacing: 2px;
         text-align: center;
     }

@@ -386,9 +386,10 @@ header:hover .header-bg {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     opacity: 0.1; }
-    #about .scroll-title-wrapper h3 {
+    #about .scroll-title-wrapper h6 {
       color: white;
-      margin-left: 100px; }
+      margin-left: 100px;
+      text-align: right; }
   #about .about-content {
     display: -ms-grid;
     display: grid;
@@ -485,7 +486,8 @@ header:hover .header-bg {
   padding: 200px 0 125px 0;
   position: relative; }
   #partners .scroll-title-wrapper {
-    top: 240px; }
+    top: 320px;
+    text-align: right; }
   #partners .partners-content {
     margin: auto;
     width: 90%; }
@@ -625,7 +627,7 @@ header:hover .header-bg {
   position: relative; }
   #purpose h3 {
     font-size: 16px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     letter-spacing: 2px;
     text-align: center; }
   #purpose .scroll-title-wrapper {
