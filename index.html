@@ -361,11 +361,17 @@
             $('body').css("overflow","hidden");
             $("header").addClass("header-active");
             $("#mobile-navigation-overlay").css("opacity","1");
+            $("header").removeClass("header-black");
+            $("header").addClass("header-white");
         }
         else{
+            $("header").removeClass("header-black");
+            $("header").removeClass("header-white");
+            
             $('body').css("overflow","visible");
             if($(window).scrollTop() < 200){
                 $("header").removeClass("header-active");
+                
             }
             setTimeout(function(){
                 $("#mobile-navigation-overlay").css("opacity","0");
