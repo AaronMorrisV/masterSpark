@@ -25,18 +25,17 @@
             <a href = "index.html"><img class = "logo" id = "logoWhite" src = "assets/logoWhite.png"></a>
         </div>
         <div class = "header-right">
-            <div class="burger" id = "burger" onclick="burgerToggle(this)">
+            <div class="burger" id = "burger" onclick="burgerToggle()">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </div>
             <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "index.html">About</a></li>
-                <li><a href = "index.html">Projects</a></li>
-                <li><a href = "index.html">Masterclasses</a></li>
-                <li><a href = "index.html">Contact</a></li>      
-
+                <li><a href = "#lander">Home</a></li>
+                <li><a href = "#about">About</a></li>
+                <li><a href = "#projects">Projects</a></li>
+                <li><a href = "#purpose">Masterclasses</a></li>
+                <li><a href = "#footer">Contact</a></li>
             </ul>
         </div>
         
@@ -44,11 +43,11 @@
     <section id = "mobile-navigation-overlay" class = "mobile-navigation-overlay">
         <div class = "mobile-nav-left">
             <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "index.html">About</a></li>
-                <li><a href = "index.html">Projects</a></li>
-                <li><a href = "index.html">Masterclasses</a></li>
-                <li><a href = "index.html">Contact</a></li>
+                <li ><a href = "#lander" onclick="burgerToggle()">Home</a></li>
+                <li><a href = "#about" onclick="burgerToggle()">About</a></li>
+                <li><a href = "#projects" onclick="burgerToggle()">Projects</a></li>
+                <li><a href = "#purpose" onclick="burgerToggle()">Masterclasses</a></li>
+                <li><a href = "#footer" onclick="burgerToggle()">Contact</a></li>  
             </ul>
         </div>
         <div class = "mobile-nav-right">
@@ -69,7 +68,7 @@
                         <a href = "#"><span class = "btn-text">Find a Masterclass</span> &nbsp; +</a>
                     </div>
                     <div class = "btn">
-                        <a href = "#"><span class = "btn-text">Projects</span> &nbsp; +</a>
+                        <a href = "#projects"><span class = "btn-text">Projects</span> &nbsp; +</a>
                     </div>
                 </div>
             </div>
@@ -279,7 +278,7 @@
         </div>
         <div class = "footer-right">
             <div class = "footer-nav-item">
-                <h3><a data-text = "HOME" href = "index.html">HOME</a></h3>
+                <h3><a data-text = "HOME" href = "#lander">HOME</a></h3>
             </div>
             <div class = "footer-nav-item">
                 <h3><a data-text = "ABOUT" href = "index.html">ABOUT</a></h3>
@@ -353,8 +352,9 @@
     });
 
     y=0
-    function burgerToggle(x) {
+    function burgerToggle() {
         y+=1
+        x = document.getElementById('burger');
         x.classList.toggle("burger-active");
         $("#mobile-navigation-overlay").toggleClass("mobile-navigation-overlay-active");
         if(y%2!=0){

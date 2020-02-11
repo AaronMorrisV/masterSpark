@@ -9,6 +9,9 @@ $dark: #212121;
     margin:0;
     font-family: 'Lato', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 ::selection {
     background: #e0ecff; /* WebKit/Blink Browsers */
   }
