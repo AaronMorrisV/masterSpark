@@ -31,11 +31,13 @@
                 <div class="bar3"></div>
             </div>
             <ul>
-                <li><a href = "#lander">Home</a></li>
-                <li><a href = "#about">About</a></li>
-                <li><a href = "#projects">Projects</a></li>
-                <li><a href = "#purpose">Masterclasses</a></li>
-                <li><a href = "#footer">Contact</a></li>
+                <li><a href = "#lander" class = "lang" key = "nav1">Home</a></li>
+                <li><a href = "#about" class = "lang" key = "nav2">About</a></li>
+                <li><a href = "#projects" class = "lang" key = "nav3">Projects</a></li>
+                <li><a href = "#purpose" class = "lang" key = "nav4">Masterclasses</a></li>
+                <li><a href = "contact.html" class = "lang" key = "nav5">Contact</a></li>
+                <li><a class = "lang-btn" id="en">En</a></li>
+                <li><a class = "lang-btn" id="bn">Bn</a></li>
             </ul>
         </div>
         
@@ -43,15 +45,17 @@
     <section id = "mobile-navigation-overlay" class = "mobile-navigation-overlay">
         <div class = "mobile-nav-left">
             <ul>
-                <li ><a href = "#lander" onclick="burgerToggle()">Home</a></li>
-                <li><a href = "#about" onclick="burgerToggle()">About</a></li>
-                <li><a href = "#projects" onclick="burgerToggle()">Projects</a></li>
-                <li><a href = "#purpose" onclick="burgerToggle()">Masterclasses</a></li>
-                <li><a href = "#footer" onclick="burgerToggle()">Contact</a></li>  
+                <li ><a href = "#lander" onclick="burgerToggle()" class = "lang" key = "nav1">Home</a></li>
+                <li><a href = "#about" onclick="burgerToggle()" class = "lang" key = "nav2">About</a></li>
+                <li><a href = "#projects" onclick="burgerToggle()" class = "lang" key = "nav3">Projects</a></li>
+                <li><a href = "#purpose" onclick="burgerToggle()" class = "lang" key = "nav4">Masterclasses</a></li>
+                <li><a href = "contact.html" onclick="burgerToggle()" class = "lang" key = "nav5">Contact</a></li>  
             </ul>
         </div>
         <div class = "mobile-nav-right">
             <div class = "socials">
+                <a class = "lang-btn" id="en">En</a>
+                <a class = "lang-btn" id="bn">Bn</a>
                 <i class="fab fa-2x fa-facebook-f"></i>
                 <i class="fab fa-2x fa-instagram"></i>
                 <h4>hello@masterspark.co.uk</h4>
@@ -62,13 +66,13 @@
         <div class = "lander-bg parallax-vert"></div>
         <div class = "lander-content paroller">
             <div class = "lander-left">
-                <h1>Master yourself with us.</h1 >
+                <h1 class = "lang" key = "lander1">Master yourself with us.</h1 >
                 <div class = "btn-wrapper">
                     <div class = "btn">
-                        <a href = "#"><span class = "btn-text">Find a Masterclass</span> &nbsp; +</a>
+                        <a href = "#"><span class = "btn-text lang" key = "lander2">Find a Masterclass</span> &nbsp; +</a>
                     </div>
                     <div class = "btn">
-                        <a href = "#projects"><span class = "btn-text">Projects</span> &nbsp; +</a>
+                        <a href = "#projects"><span class = "btn-text lang" key = "lander3">Projects</span> &nbsp; +</a>
                     </div>
                 </div>
             </div>
@@ -86,14 +90,14 @@
         </div>
         <div class = "about-content">
             <div class = "about-right paroller">
-                <h3>ABOUT US</h3>
-                <p>
+                <h3 class = "lang" key = "about1">ABOUT US</h3>
+                <p class = "lang" key = "about2">
                     We are an innovative network using proven methods to bring modern and contemporary knowledge to businesses, professionals and education.
                     <br> <br>
                     Our aim is to introduce useful tools and new ways of thinking into existing establishments in order to increase efficiency and quality of work.
                 </p>
                 <div class = "btn">
-                    <a href = "#"><span class = "btn-text">Contact Us</span> &nbsp; +</a>
+                    <a href = "#"><span class = "btn-text lang" key = "about3">Contact Us</span> &nbsp; +</a>
                 </div>
             </div>
             <div class = "about-left">
@@ -104,10 +108,10 @@
     </section>
     <section id = "partners">
         <div class = "scroll-title-wrapper">
-            <h6 class = "paroller-scroll-title">OUR PARTNERS</h6>
+            <h6 class = "paroller-scroll-title lang" key = "partners1">OUR PARTNERS</h6>
         </div>
         <div class = "partners-content">
-            <h3>Our Partners</h3>
+            <h3 class ="lang" key = "partners1">Our Partners</h3>
             <div class = "partners-carousel">
                 <img src = "assets/fbLogoB.png">
                 <img src = "assets/netflixLogoB.png">
@@ -119,7 +123,7 @@
     <section id = "projects">
         <div class = "projects-content">
             <div class = "project-titles">
-                <h3>Our Projects</h3>
+                <h3 class = "lang" key = "projects1">Our Projects</h3>
                 <div class = "vertical-line"></div>
                 <div class = "project-title project-title-right">
                     <div class = "img-wrapper img-wrapper-right paroller-project-image">
@@ -128,9 +132,9 @@
                         </div>
                     </div>
                     <div class = "project-text-wrapper">
-                        <a href = "#" class = "project-subtitle">Lorem Ipsum Dolor</a>
+                        <a href = "#" class = "lang" key = "projects2">Lorem Ipsum Dolor</a>
                         <div class = "btn">
-                            <a href = "#"><span class = "btn-text">View Details</span> &nbsp; +</a>
+                            <a href = "#"><span class = "btn-text lang" key = "projectsDetails">View Details</span> &nbsp; +</a>
                         </div>
                     </div>
                 </div>
@@ -142,9 +146,9 @@
                         </div>
                     </div>
                     <div class = "project-text-wrapper">
-                        <a href = "#">Sit Amet Consectetur</a>
+                        <a href = "#" class = "lang" key = "projects3">Sit Amet Consectetur</a>
                         <div class = "btn">
-                            <a href = "#"><span class = "btn-text">View Details</span> &nbsp; +</a>
+                            <a href = "#"><span class = "btn-text lang" key = "projectsDetails">View Details</span> &nbsp; +</a>
                         </div>
                     </div>
                 </div>
@@ -156,9 +160,9 @@
                         </div>
                     </div>
                     <div class = "project-text-wrapper">
-                        <a href = "#">Adipiscing Elit</a>
+                        <a href = "#" class = "lang" key = "projects4">Adipiscing Elit</a>
                         <div class = "btn">
-                            <a href = "#"><span class = "btn-text">View Details</span> &nbsp; +</a>
+                            <a href = "#"><span class = "btn-text lang" key = "projectsDetails">View Details</span> &nbsp; +</a>
                         </div>
                     </div>
                 </div>
@@ -170,9 +174,9 @@
                         </div>
                     </div>
                     <div class = "project-text-wrapper">
-                        <a href = "#">Aenean Ac</a>
+                        <a href = "#" class = "lang" key = "projects5">Aenean Ac</a>
                         <div class = "btn">
-                            <a href = "#"><span class = "btn-text">View Details</span> &nbsp; +</a>
+                            <a href = "#"><span class = "btn-text lang" key = "projectsDetails">View Details</span> &nbsp; +</a>
                         </div>
                     </div>
                 </div>
@@ -180,36 +184,36 @@
         </div>
     </section>
     <section id = "purpose">
-        <h3>What We Do</h3>
+        <h3 class = "lang" key = "purpose1">What We Do</h3>
         <div class = "scroll-title-wrapper">
-            <h6 class = "paroller-scroll-title">WHAT WE DO</h6>
+            <h6 class = "paroller-scroll-title lang" key = "purpose1">WHAT WE DO</h6>
         </div>
         <div class = "purpose-content">
             <div class = "purpose-top">
-                <p>We offer a variety of different courses starting from mid 2020 so that you can learn in a way best suited to you and to your schedule. Courses are ranked beginner, intermediate and advanced. Some courses will recommend some material to go through before attending. Please view specific event pages to find the extra material.All courses will include an opportunity for coffee and networking with fellow participants and speakers.</p>
+                <p class = "lang" key = "purpose2">We offer a variety of different courses starting from mid 2020 so that you can learn in a way best suited to you and to your schedule. Courses are ranked beginner, intermediate and advanced. Some courses will recommend some material to go through before attending. Please view specific event pages to find the extra material.All courses will include an opportunity for coffee and networking with fellow participants and speakers.</p>
                 <div class = "purpose-btn purpose-btn-active" id = "purpose-lectures">
-                    <h4 data-text = "+ LECTURES">+ LECTURES</h4>
+                    <h4 data-text = "+ LECTURES" class = "lang" key = "purpose3">+ LECTURES</h4>
                 </div>
                 <div class = "purpose-btn" id = "purpose-seminars">
-                    <h4 data-text = "+ SEMINARS">+ SEMINARS</h4>
+                    <h4 data-text = "+ SEMINARS" class = "lang" key = "purpose4">+ SEMINARS</h4>
                 </div>
                 <div class = "purpose-btn" id = "purpose-workshops">
-                    <h4 data-text = "+ WORKSHOPS">+ WORKSHOPS</h4>
+                    <h4 data-text = "+ WORKSHOPS" class = "lang" key = "purpose5">+ WORKSHOPS</h4>
                 </div>
             </div>
             <div class = "purpose-bottom">
                 <div class = "purpose-bottom-inner">
                     <div class = "purpose-desc purpose-lectures purpose-desc-active">
-                        <h4>Lectures</h4>
-                        <p>Experts on the subjects from around the globe give talks on their areas of expertise. Each talk will also host a question and answer space for you to pick the guest speakers’ brains and ask any question you might still be unsure about. Lectures and seminars will be given as one off events and as a chain of events too. Talks vary from general introductions of a new technology to specific innovative uses and applications of that technology.</p>
+                        <h4 class = "lang" key = "purpose6">Lectures</h4>
+                        <p class = "lang" key = "purpose7">Experts on the subjects from around the globe give talks on their areas of expertise. Each talk will also host a question and answer space for you to pick the guest speakers’ brains and ask any question you might still be unsure about. Lectures and seminars will be given as one off events and as a chain of events too. Talks vary from general introductions of a new technology to specific innovative uses and applications of that technology.</p>
                     </div>
                     <div class = "purpose-desc purpose-seminars">
-                        <h4>Seminars</h4>
-                        <p>A series of intense, focused meetings lead by an expert in which you can gain in-depth and exclusive knowledge about a specific new technology, it’s applications and how it will shape the future.</p>
+                        <h4 class = "lang" key = "purpose8">Seminars</h4>
+                        <p class = "lang" key = "purpose9">A series of intense, focused meetings lead by an expert in which you can gain in-depth and exclusive knowledge about a specific new technology, it’s applications and how it will shape the future.</p>
                     </div>
                     <div class = "purpose-desc purpose-workshops">
-                        <h4>Workshops</h4>
-                        <p>Together, students and the workshop leader will come up with ways to use new technologies to solve your business problems. These work best with masterclasses.</p>
+                        <h4 class = "lang" key = "purpose10">Workshops</h4>
+                        <p class = "lang" key = "purpose11">Together, students and the workshop leader will come up with ways to use new technologies to solve your business problems. These work best with masterclasses.</p>
                     </div>
                 </div>
             </div>
@@ -217,11 +221,11 @@
     </section>
     <section id = "team">
         <div class = "team-content">
-            <h3>The Team</h3>
+            <h3 class = "lang" key = "team1">The Team</h3>
             <div class = "team-member">
                 <img src = "assets/team-member3.jpg">
                 <div class = "team-member-desc">
-                    <h4>Natalie Ho <span>- Chairman</span></h4>
+                    <h4>Natalie Ho <span class = "lang" key = "team2">- Chairman</span></h4>
                     <i class="fab fa-2x fa-facebook-f"></i>
                     <i class="fab fa-2x fa-linkedin-in"></i>
                 </div>
@@ -229,7 +233,7 @@
             <div class = "team-member">
                 <img src = "assets/team-member1.jpg">
                 <div class = "team-member-desc">
-                    <h4>Mazibur Rahman <span>- CTO</span></h4>
+                    <h4>Mazibur Rahman <span class = "lang" key = "team3">- CTO</span></h4>
                     <i class="fab fa-2x fa-facebook-f"></i>
                     <i class="fab fa-2x fa-linkedin-in"></i>
                     <i class="fab fa-2x fa-instagram"></i>
@@ -238,7 +242,7 @@
             <div class = "team-member">
                 <img src = "assets/team-member2.jpg">
                 <div class = "team-member-desc">
-                    <h4>Sue McDonald <span>- VP</span></h4>
+                    <h4>Sue McDonald <span class = "lang" key = "team4">- VP</span></h4>
                     <i class="fab fa-2x fa-facebook-f"></i>
                     <i class="fab fa-2x fa-linkedin-in"></i>
                     <i class="fab fa-2x fa-instagram"></i>
@@ -255,21 +259,21 @@
     <section id = "footer">
         <div class = "footer-left">
             <div class = "footer-info-item">
-                <h4>Phone</h4>
+                <h4 class = "lang" key = "footer1">Phone</h4>
                 <p>+447742976738</p>
             </div>
             <div class = "footer-info-item">
-                <h4>Email</h4>
+                <h4 class = "lang" key = "footer2">Email</h4>
                 <p>info@mastersparknetwork.com</p>
             </div>
             <div class = "footer-info-item">
-                <h4>Address</h4>
+                <h4 class = "lang" key = "footer3">Address</h4>
                 <p>13 California, Spark Tower <br>
                     Master Spark Network <br>
                     DHX 4A1</p>
             </div>
             <div class = "footer-info-item">
-                <h4>Social</h4>
+                <h4 class = "lang" key = "footer4">Social</h4>
                 <div class = "footer-socials">
                     <i class="fab fa-2x fa-facebook-f"></i>
                     <i class="fab fa-2x fa-instagram"></i>
@@ -278,149 +282,24 @@
         </div>
         <div class = "footer-right">
             <div class = "footer-nav-item">
-                <h3><a data-text = "HOME" href = "#lander">HOME</a></h3>
+                <h3><a data-text = "HOME" href = "#lander" class = "lang" key = "footerX5">HOME</a></h3>
             </div>
             <div class = "footer-nav-item">
-                <h3><a data-text = "ABOUT" href = "index.html">ABOUT</a></h3>
+                <h3><a data-text = "ABOUT" href = "#about" class = "lang" key = "footerX6">ABOUT</a></h3>
             </div>
             <div class = "footer-nav-item">
-                <h3><a data-text = "PROJECTS" href = "index.html">PROJECTS</a></h3>
+                <h3><a data-text = "PROJECTS" href = "#projects" class = "lang" key = "footerX7">PROJECTS</a></h3>
             </div>
             <div class = "footer-nav-item">
-                <h3><a data-text = "MASTERCLASSES" href = "index.html">MASTERCLASSES</a></h3>
+                <h3><a data-text = "MASTERCLASSES" href = "#purpose" class = "lang" key = "footerX8">MASTERCLASSES</a></h3>
+            </div>
+            <div class = "footer-nav-item">
+                <h3><a data-text = "CONTACT" href = "contact.html" class = "lang" key = "footerX9">CONTACT</a></h3>
             </div>
         </div>
-        <p class = "copyright">© 2019 All Rights Reserved By Master Spark Network</p>
+        <p class = "copyright">© 2020 All Rights Reserved By Master Spark Network</p>
     </section>
+    <script src = "main.js"></script>
+    <script src = "lang.js"></script>
+    <script src = "indexHeaderCol.js"></script>
 </body>
-<script>
-    // HEADER SCRIPTS START
-    $(window).on("scroll", function() {
-        if($(window).scrollTop() > 200) {
-            $("header").addClass("header-active");
-        } else {
-            $("header").removeClass("header-active");
-            $("header").removeClass("header-black");
-            $("header").removeClass("header-white");
-        }
-    });
-
-    var scrollPos = $(window).scrollTop();
-    var landerPos = document.getElementById('lander').getBoundingClientRect().top + window.pageYOffset;
-    var aboutPos = document.getElementById('about').getBoundingClientRect().top + window.pageYOffset;
-    var partnersPos = document.getElementById('partners').getBoundingClientRect().top + window.pageYOffset;
-    var projectsPos = document.getElementById('projects').getBoundingClientRect().top + window.pageYOffset;
-    var teamPos = document.getElementById('team').getBoundingClientRect().top + window.pageYOffset;
-    window.addEventListener("resize", windowResize);
-    function windowResize(){
-        var landerPos = document.getElementById('lander').getBoundingClientRect().top + window.pageYOffset;
-        var aboutPos = document.getElementById('about').getBoundingClientRect().top + window.pageYOffset;
-        var partnersPos = document.getElementById('partners').getBoundingClientRect().top + window.pageYOffset;
-        var projectsPos = document.getElementById('projects').getBoundingClientRect().top + window.pageYOffset;
-        var teamPos = document.getElementById('team').getBoundingClientRect().top + window.pageYOffset;
-    }
-
-    $(window).on("scroll", function() {
-        var scrollPos = $(window).scrollTop();
-        var headerCol = "";
-        var arr = [
-            ["landerPos", landerPos, "white"],
-            ["aboutPos", aboutPos, "black"],
-            ["partnersPos", partnersPos, "white"],
-            ["projectsPos", projectsPos, "white"],
-            ["teamPos", teamPos, "black"],
-        ]
-        for (i = 0; i < arr.length; i++){
-            if(scrollPos < arr[i][1]){
-                //console.log(arr[i-1][0]);
-                headerCol = arr[i-1][2];
-                break
-            }
-            else if(i == arr.length-1){
-                //console.log(arr[arr.length-1][0]);
-                headerCol = arr[arr.length-1][2];
-            }
-        }
-        if(headerCol == "white"){
-            $("header").addClass("header-black");
-            $("header").removeClass("header-white");
-        }
-        else{
-            $("header").addClass("header-white");
-            $("header").removeClass("header-black");
-        }
-    });
-
-    y=0
-    function burgerToggle() {
-        y+=1
-        x = document.getElementById('burger');
-        x.classList.toggle("burger-active");
-        $("#mobile-navigation-overlay").toggleClass("mobile-navigation-overlay-active");
-        if(y%2!=0){
-            $('body').css("overflow","hidden");
-            $("header").addClass("header-active");
-            $("#mobile-navigation-overlay").css("opacity","1");
-            $("header").removeClass("header-black");
-            $("header").addClass("header-white");
-        }
-        else{
-            $("header").removeClass("header-black");
-            $("header").removeClass("header-white");
-            
-            $('body').css("overflow","visible");
-            if($(window).scrollTop() < 200){
-                $("header").removeClass("header-active");
-                
-            }
-            setTimeout(function(){
-                $("#mobile-navigation-overlay").css("opacity","0");
-            }, 850);
-        }
-    }
-    //HEADER SCRIPTS END
-
-    // PURPOSE SCRIPT START
-    jQuery(document).ready(function(){
-        jQuery('.purpose-btn').click(function(event){
-            //remove all pre-existing active classes
-            jQuery('.purpose-btn-active').removeClass('purpose-btn-active');
-            jQuery('.purpose-desc-active').removeClass('purpose-desc-active');
-            //add the active class to the link we clicked
-
-            jQuery(this).addClass('purpose-btn-active');
-            $("."+jQuery(this).attr('id')).addClass('purpose-desc-active');
-
-            event.preventDefault();
-        });
-    });
-    // PURPOSE SCRIPT END
-
-
-
-
-    $(".paroller-scroll-title, [data-paroller-factor]").paroller({
-        factor: 0.2,            // multiplier for scrolling speed and offset
-        factorXs: 0.1,           // multiplier for scrolling speed and offset
-        type: 'foreground',     // background, foreground
-        direction: 'horizontal', // vertical, horizontal
-        //transition: 'transform 0.2s ease-in' // CSS transition
-    });
-    /*$(".paroller-project-image, [data-paroller-factor]").paroller({
-        factor: 0.1,            // multiplier for scrolling speed and offset
-        type: 'foreground',     // background, foreground
-        direction: 'vertical', // vertical, horizontal
-        //transition: 'transform 0.2s ease-in' // CSS transition
-    });
-    $(".paroller-project-image-inner, [data-paroller-factor]").paroller({
-        factor: 0.1,            // multiplier for scrolling speed and offset
-        type: 'foreground',     // background, foreground
-        direction: 'vertical', // vertical, horizontal
-        //transition: 'transform 0.2s ease-in' // CSS transition
-    });*/
-    
-    //var rellax = new Rellax('.rellax');
-    // /https://tgomilar.github.io/paroller.js/#demo
-
-
-</script>

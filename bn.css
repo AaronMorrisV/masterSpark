@@ -1,0 +1,5 @@
+#lander .lander-content .lander-left h1 {
+  font-size: 40px; }
+  @media (min-width: 720px) {
+    #lander .lander-content .lander-left h1 {
+      font-size: 65px; } }

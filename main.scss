@@ -12,12 +12,15 @@ $dark: #212121;
 html{
     scroll-behavior: smooth;
 }
+.paroller-scroll-title{
+    text-transform: uppercase;
+}
 ::selection {
     background: #e0ecff; /* WebKit/Blink Browsers */
-  }
-  ::-moz-selection {
+}
+::-moz-selection {
     background: #e0ecff; /* Gecko Browsers */
-  }
+}
 .btn{
     //overflow:hidden;
     //position: relative;
@@ -127,6 +130,9 @@ header{
                     color:$dark;
                     mix-blend-mode: difference;
                     transition: 1.3s;
+                }
+                .lang-btn{
+                    border-bottom: 1px solid black;
                 }
             }
         }
@@ -292,7 +298,10 @@ header:hover .header-bg{
                 opacity:0.6;
                 transition:0.3s;
                 grid-column: 1/3;
-                
+            }
+            a{
+                opacity: 0.6;
+                border-bottom: 1px solid white;
             }
         }
     }
@@ -827,7 +836,7 @@ header:hover .header-bg{
 #team{
     background-color: $dark;
     .team-content{
-        padding: 150px 0 0 0;
+        padding: 100px 0 0 0;
         width:80%;
         margin:auto;
         color:white;
@@ -891,7 +900,7 @@ header:hover .header-bg{
     @media(min-width:480px){
         .team-content{
             width:calc(100% - 10em);
-            padding:5em;
+            padding:7em 5em 5em 5em;
             display: grid;
             .team-member{
                 max-width:350px;
@@ -1022,6 +1031,74 @@ header:hover .header-bg{
                     }
                 }
             }
+        }
+    }
+}
+
+#contact{
+    display: grid;
+    padding-left: 2em;
+    padding-right:2em;
+    padding-top:100px;
+    //background-color: blue;
+    min-height: calc(100vh - 150px);
+    .contact-left{
+        margin-bottom: 50px;
+
+        h2{
+            //color:$pink;
+            font-weight: 600;
+        }
+        p{
+            font-size: 14px;
+            line-height:20px;
+            margin-bottom:20px;
+        }
+    }
+    .contact-right{
+        h3{
+            font-weight: 400;
+            margin-bottom:10px;
+        }
+        .btn{
+            a{
+                font-size: 14px;
+            }
+        }
+        form{
+            input,textarea{
+                width:100%;
+                border: none;
+                border-bottom: 1px solid $dark;
+                background-color: white;
+            }
+            input{
+                height:30px;
+                margin-bottom: 15px;
+            }
+            input::-webkit-input-placeholder{
+                margin-left:10px;
+            }
+            textarea{
+                height:100px;
+                margin-bottom:20px;
+            }
+        }
+        .spacer{
+            margin-bottom: 40px;
+        }
+    }
+    @media (min-width:1024px){
+        padding-left: 100px;
+        padding-right:100px;
+        padding-top: 150px;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 30px;
+        //align-content: center;
+        
+        h2{
+            font-size: 70px;
+            margin-bottom: 20px;
         }
     }
 }

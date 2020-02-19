@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href = "main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,500,600,700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel = "stylesheet">
+    <!--<link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">-->
+    <!-- Scroll 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+
+    <!--<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>-->
+    <script src="jquery.paroller.min.js"></script>
+    <!--<script src = "relax.js"></script>-->
+    
+    <title>Master Spark</title>
+</head>
+<body>
+    <header>
+        <div class = "header-bg"></div>
+        <div class = "header-left">
+            <a href = "index.html" ><img class = "logo" id = "logoBlack" src = "assets/logo.png"></a>
+            <a href = "index.html"><img class = "logo" id = "logoWhite" src = "assets/logoWhite.png"></a>
+        </div>
+        <div class = "header-right">
+            <div class="burger" id = "burger" onclick="burgerToggle()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul>
+                <li><a href = "index.html#lander" class = "lang" key = "nav1">Home</a></li>
+                <li><a href = "index.html#about" class = "lang" key = "nav2">About</a></li>
+                <li><a href = "index.html#projects" class = "lang" key = "nav3">Projects</a></li>
+                <li><a href = "index.html#purpose" class = "lang" key = "nav4">Masterclasses</a></li>
+                <li><a href = "contact.html" class = "lang" key = "nav5">Contact</a></li>
+                <li><a class = "lang-btn" id="en">En</a></li>
+                <li><a class = "lang-btn" id="bn">Bn</a></li>
+            </ul>
+        </div>
+        
+    </header>
+    <section id = "mobile-navigation-overlay" class = "mobile-navigation-overlay">
+        <div class = "mobile-nav-left">
+            <ul>
+                <li ><a href = "index.html#lander" onclick="burgerToggle()" class = "lang" key = "nav1">Home</a></li>
+                <li><a href = "index.html#about" onclick="burgerToggle()" class = "lang" key = "nav2">About</a></li>
+                <li><a href = "index.html#projects" onclick="burgerToggle()" class = "lang" key = "nav3">Projects</a></li>
+                <li><a href = "index.html#purpose" onclick="burgerToggle()" class = "lang" key = "nav4">Masterclasses</a></li>
+                <li><a href = "contact.html" onclick="burgerToggle()" class = "lang" key = "nav5">Contact</a></li>  
+            </ul>
+        </div>
+        <div class = "mobile-nav-right">
+            <div class = "socials">
+                <a class = "lang-btn" id="en">En</a>
+                <a class = "lang-btn" id="bn">Bn</a>
+                <i class="fab fa-2x fa-facebook-f"></i>
+                <i class="fab fa-2x fa-instagram"></i>
+                <h4>hello@masterspark.co.uk</h4>
+            </div>
+        </div>
+    </section>
+    
+    <section id = "contact">
+        <div class = "contact-left">
+            <h2 data-aos = "fade" class = "lang" key = "contact1">Contact Us</h2>
+            <p data-aos = "fade" data-aos-delay="300" class = "lang" key = "contact2">Whether you're a business wanting to get involved or ask a question, or you simply want to get to know us better, please contact us, we're always happy to discuss!</p>
+            <h5 data-aos = "fade" data-aos-delay="600">hello@masterspark.co.uk</h5>
+        </div>
+        <div class = "contact-right">
+            <h3 data-aos = "fade" data-aos-delay="900" class = "lang" key = "contact3">Send Us a Message</h3>
+            <form>
+                <input type = "text" id = "firstname" placeholder = "First Name *" data-aos = "fade-up" data-aos-delay="1000" class = "lang" key = "contactX4">
+                <input type = "text" id = "surname" placeholder = "Surname *" data-aos = "fade-up" data-aos-delay="1100" class = "lang" key = "contactX5">
+                <input type = "text" id = "email" placeholder = "Email *" data-aos = "fade-up" data-aos-delay="1200" class = "lang" key = "contactX6">
+                <input type = "text" id = "company-name" placeholder = "Company Name" data-aos = "fade-up" data-aos-delay="1300" class = "lang" key = "contactX7">
+                <textarea id = "message" name = "message" placeholder = "How can we help you? *" data-aos = "fade-up" data-aos-delay="1400" class = "lang" key = "contactX8"></textarea>
+            </form>
+            <div class = "btn">
+                <a href = "#"><span class = "btn-text lang" key = "contact9">Send Message</span> &nbsp; +</a>
+            </div>
+            <div class = "spacer"></div>
+        </div>
+    </section>
+    <section id = "footer">
+        <div class = "footer-left">
+            <div class = "footer-info-item">
+                <h4 class = "lang" key = "footer1">Phone</h4>
+                <p>+447742976738</p>
+            </div>
+            <div class = "footer-info-item">
+                <h4 class = "lang" key = "footer2">Email</h4>
+                <p>info@mastersparknetwork.com</p>
+            </div>
+            <div class = "footer-info-item">
+                <h4 class = "lang" key = "footer3">Address</h4>
+                <p>13 California, Spark Tower <br>
+                    Master Spark Network <br>
+                    DHX 4A1</p>
+            </div>
+            <div class = "footer-info-item">
+                <h4 class = "lang" key = "footer4">Social</h4>
+                <div class = "footer-socials">
+                    <i class="fab fa-2x fa-facebook-f"></i>
+                    <i class="fab fa-2x fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <div class = "footer-right">
+            <div class = "footer-nav-item">
+                <h3><a data-text = "HOME" href = "index.html#lander" class = "lang" key = "footerX5">HOME</a></h3>
+            </div>
+            <div class = "footer-nav-item">
+                <h3><a data-text = "ABOUT" href = "index.html#about" class = "lang" key = "footerX6">ABOUT</a></h3>
+            </div>
+            <div class = "footer-nav-item">
+                <h3><a data-text = "PROJECTS" href = "index.html#projects" class = "lang" key = "footerX7">PROJECTS</a></h3>
+            </div>
+            <div class = "footer-nav-item">
+                <h3><a data-text = "MASTERCLASSES" href = "index.html#purpose" class = "lang" key = "footerX8">MASTERCLASSES</a></h3>
+            </div>
+            <div class = "footer-nav-item">
+                <h3><a data-text = "CONTACT" href = "contact.html" class = "lang" key = "footerX9">CONTACT</a></h3>
+            </div>
+        </div>
+        <p class = "copyright">© 2020 All Rights Reserved By Master Spark Network</p>
+    </section>
+    <script src = "lang.js"></script>
+    <script src = "main.js"></script>
+</body>
