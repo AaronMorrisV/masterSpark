@@ -79,3 +79,36 @@ $(".paroller-project-image-inner, [data-paroller-factor]").paroller({
 
 //var rellax = new Rellax('.rellax');
 // /https://tgomilar.github.io/paroller.js/#demo
+
+
+// SMOOTH SCROLL START //
+$(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+  
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+  
+        // Store hash
+        var hash = this.hash;
+        if(hash == "#initiatives"){
+            offset = -60
+        }
+        else{
+            offset = 0
+        }
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top + offset
+        }, 100, function(){
+  
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          //window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+// SMOOTH SCROLL END //

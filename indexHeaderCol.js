@@ -2,16 +2,16 @@ var scrollPos = $(window).scrollTop();
 var landerPos = document.getElementById('lander').getBoundingClientRect().top + window.pageYOffset;
 var aboutPos = document.getElementById('about').getBoundingClientRect().top + window.pageYOffset;
 var partnersPos = document.getElementById('partners').getBoundingClientRect().top + window.pageYOffset;
-var projectsPos = document.getElementById('projects').getBoundingClientRect().top + window.pageYOffset;
+var initiativesPos = document.getElementById('initiatives').getBoundingClientRect().top + window.pageYOffset;
 var teamPos = document.getElementById('team').getBoundingClientRect().top + window.pageYOffset;
 
 window.addEventListener("resize", windowResize);
 function windowResize(){
-    var landerPos = document.getElementById('lander').getBoundingClientRect().top + window.pageYOffset;
-    var aboutPos = document.getElementById('about').getBoundingClientRect().top + window.pageYOffset;
-    var partnersPos = document.getElementById('partners').getBoundingClientRect().top + window.pageYOffset;
-    var projectsPos = document.getElementById('projects').getBoundingClientRect().top + window.pageYOffset;
-    var teamPos = document.getElementById('team').getBoundingClientRect().top + window.pageYOffset;
+    landerPos = document.getElementById('lander').getBoundingClientRect().top + window.pageYOffset;
+    aboutPos = document.getElementById('about').getBoundingClientRect().top + window.pageYOffset;
+    partnersPos = document.getElementById('partners').getBoundingClientRect().top + window.pageYOffset;
+    initiativesPos = document.getElementById('initiatives').getBoundingClientRect().top + window.pageYOffset;
+    teamPos = document.getElementById('team').getBoundingClientRect().top + window.pageYOffset;
 }
 
 $(window).on("scroll", function() {
@@ -21,7 +21,7 @@ $(window).on("scroll", function() {
         ["landerPos", landerPos, "white"],
         ["aboutPos", aboutPos, "black"],
         ["partnersPos", partnersPos, "white"],
-        ["projectsPos", projectsPos, "white"],
+        ["initiativesPos", initiativesPos, "white"],
         ["teamPos", teamPos, "black"],
     ]
     for (i = 0; i < arr.length; i++){
@@ -39,7 +39,7 @@ $(window).on("scroll", function() {
         $("header").addClass("header-black");
         $("header").removeClass("header-white");
     }
-    else{
+    else if (headerCol == "black"){
         $("header").addClass("header-white");
         $("header").removeClass("header-black");
     }

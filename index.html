@@ -32,22 +32,31 @@
             </div>
             <ul>
                 <li><a href = "#lander" class = "lang" key = "nav1">Home</a></li>
-                <li><a href = "#about" class = "lang" key = "nav2">About</a></li>
-                <li><a href = "#projects" class = "lang" key = "nav3">Projects</a></li>
+                <li id = "about-nav"><a href = "#about" class = "lang" key = "nav2">About</a></li>
+                <div class = "slideout">
+                    <li><a href = "contact.html" id = "contact-nav" class = "lang" key = "nav2">Contact</a></li>
+                </div>
+                
+                <!--<li class="dropdown">
+                    <a href = "#about" class = "lang" key = "nav2">About</a>
+                    <div class="dropdown-content">
+                      <a href="#">Contact</a>
+                        </div>
+                </li> -->
+                <li><a href = "#initiatives" class = "lang" key = "nav3">Initiatives</a></li>
                 <li><a href = "#purpose" class = "lang" key = "nav4">Masterclasses</a></li>
-                <li><a href = "contact.html" class = "lang" key = "nav5">Contact</a></li>
+                <!--<li><a href = "contact.html" class = "lang" key = "nav5">Contact</a></li>-->
                 <li><a class = "lang-btn" id="en">En</a></li>
                 <li><a class = "lang-btn" id="bn">Bn</a></li>
             </ul>
         </div>
-        
     </header>
     <section id = "mobile-navigation-overlay" class = "mobile-navigation-overlay">
         <div class = "mobile-nav-left">
             <ul>
                 <li ><a href = "#lander" onclick="burgerToggle()" class = "lang" key = "nav1">Home</a></li>
                 <li><a href = "#about" onclick="burgerToggle()" class = "lang" key = "nav2">About</a></li>
-                <li><a href = "#projects" onclick="burgerToggle()" class = "lang" key = "nav3">Projects</a></li>
+                <li><a href = "#initiatives" onclick="burgerToggle()" class = "lang" key = "nav3">Initiatives</a></li>
                 <li><a href = "#purpose" onclick="burgerToggle()" class = "lang" key = "nav4">Masterclasses</a></li>
                 <li><a href = "contact.html" onclick="burgerToggle()" class = "lang" key = "nav5">Contact</a></li>  
             </ul>
@@ -72,7 +81,7 @@
                         <a href = "#"><span class = "btn-text lang" key = "lander2">Find a Masterclass</span> &nbsp; +</a>
                     </div>
                     <div class = "btn">
-                        <a href = "#projects"><span class = "btn-text lang" key = "lander3">Projects</span> &nbsp; +</a>
+                        <a href = "#initiatives"><span class = "btn-text lang" key = "lander3">Initiatives</span> &nbsp; +</a>
                     </div>
                 </div>
             </div>
@@ -92,17 +101,20 @@
             <div class = "about-right paroller">
                 <h3 class = "lang" key = "about1">ABOUT US</h3>
                 <p class = "lang" key = "about2">
-                    We are an innovative network using proven methods to bring modern and contemporary knowledge to businesses, professionals and education.
-                    <br> <br>
-                    Our aim is to introduce useful tools and new ways of thinking into existing establishments in order to increase efficiency and quality of work.
+                    The MasterSpark network supports companies and individuals to upskill, reskill and train their workforce with the highest quality content and the most innovative methods, in subject areas relevant to their business today and in the future.
+                    <br><br>
+                    Our aim is to introduce useful tools and new ways of thinking into existing establishments in order to increase efficiency and value of work.
+                    <br><br>
+                    From skills-based training to deep learning, MasterSpark delivers what you need.
                 </p>
-                <div class = "btn">
+                <!--<div class = "btn">
                     <a href = "#"><span class = "btn-text lang" key = "about3">Contact Us</span> &nbsp; +</a>
-                </div>
+                </div>-->
             </div>
             <div class = "about-left">
                 <img src = "assets/img1.png" class = "about-img-1">
                 <img src = "assets/img2.png" class = "about-img-2">
+                
             </div>
         </div>
     </section>
@@ -120,63 +132,63 @@
             </div>
         </div>
     </section>
-    <section id = "projects">
-        <div class = "projects-content">
-            <div class = "project-titles">
-                <h3 class = "lang" key = "projects1">Our Projects</h3>
+    <section id = "initiatives">
+        <div class = "initiatives-content">
+            <div class = "initiative-titles">
+                <h3 class = "lang" key = "initiatives1">Our Initiatives</h3>
                 <div class = "vertical-line"></div>
-                <div class = "project-title project-title-right">
-                    <div class = "img-wrapper img-wrapper-right paroller-project-image">
+                <div class = "initiative-title initiative-title-right">
+                    <div class = "img-wrapper img-wrapper-right paroller-initiative-image">
                         <div class = "img-crop">
-                            <img src = "assets/smpl1.jpeg" class = "paroller-project-image-inner">
+                            <img src = "assets/smpl1.jpeg" class = "paroller-initiative-image-inner">
                         </div>
                     </div>
-                    <div class = "project-text-wrapper">
-                        <a href = "#" class = "lang" key = "projects2">Lorem Ipsum Dolor</a>
+                    <div class = "initiative-text-wrapper">
+                        <a href = "#" class = "lang" key = "initiatives2">Lorem Ipsum Dolor</a>
                         <div class = "btn">
-                            <a href = "#"><span class = "btn-text lang" key = "projectsDetails">View Details</span> &nbsp; +</a>
+                            <a href = "#"><span class = "btn-text lang" key = "initiativesDetails">View Details</span> &nbsp; +</a>
                         </div>
                     </div>
                 </div>
                 <div class = "vertical-line"></div>
-                <div class = "project-title project-title-left">
-                    <div class = "img-wrapper img-wrapper-left paroller-project-image">
+                <div class = "initiative-title initiative-title-left">
+                    <div class = "img-wrapper img-wrapper-left paroller-initiative-image">
                         <div class = "img-crop">
-                            <img src = "assets/smpl2.jpeg" class = "paroller-project-image-inner">
+                            <img src = "assets/smpl2.jpeg" class = "paroller-initiative-image-inner">
                         </div>
                     </div>
-                    <div class = "project-text-wrapper">
-                        <a href = "#" class = "lang" key = "projects3">Sit Amet Consectetur</a>
+                    <div class = "initiative-text-wrapper">
+                        <a href = "#" class = "lang" key = "initiatives3">Sit Amet Consectetur</a>
                         <div class = "btn">
-                            <a href = "#"><span class = "btn-text lang" key = "projectsDetails">View Details</span> &nbsp; +</a>
+                            <a href = "#"><span class = "btn-text lang" key = "initiativesDetails">View Details</span> &nbsp; +</a>
                         </div>
                     </div>
                 </div>
                 <div class = "vertical-line"></div>
-                <div class = "project-title project-title-right">
-                    <div class = "img-wrapper img-wrapper-right paroller-project-image">
+                <div class = "initiative-title initiative-title-right">
+                    <div class = "img-wrapper img-wrapper-right paroller-initiative-image">
                         <div class = "img-crop">
-                            <img src = "assets/smpl3.jpeg" class = "paroller-project-image-inner">
+                            <img src = "assets/smpl3.jpeg" class = "paroller-initiative-image-inner">
                         </div>
                     </div>
-                    <div class = "project-text-wrapper">
-                        <a href = "#" class = "lang" key = "projects4">Adipiscing Elit</a>
+                    <div class = "initiative-text-wrapper">
+                        <a href = "#" class = "lang" key = "initiatives4">Adipiscing Elit</a>
                         <div class = "btn">
-                            <a href = "#"><span class = "btn-text lang" key = "projectsDetails">View Details</span> &nbsp; +</a>
+                            <a href = "#"><span class = "btn-text lang" key = "initiativesDetails">View Details</span> &nbsp; +</a>
                         </div>
                     </div>
                 </div>
                 <div class = "vertical-line"></div>
-                <div class = "project-title project-title-left">
-                    <div class = "img-wrapper img-wrapper-left paroller-project-image">
+                <div class = "initiative-title initiative-title-left">
+                    <div class = "img-wrapper img-wrapper-left paroller-initiative-image">
                         <div class = "img-crop">
-                            <img src = "assets/smpl4.jpeg" class = "paroller-project-image-inner">
+                            <img src = "assets/smpl4.jpeg" class = "paroller-initiative-image-inner">
                         </div>
                     </div>
-                    <div class = "project-text-wrapper">
-                        <a href = "#" class = "lang" key = "projects5">Aenean Ac</a>
+                    <div class = "initiative-text-wrapper">
+                        <a href = "#" class = "lang" key = "initiatives5">Aenean Ac</a>
                         <div class = "btn">
-                            <a href = "#"><span class = "btn-text lang" key = "projectsDetails">View Details</span> &nbsp; +</a>
+                            <a href = "#"><span class = "btn-text lang" key = "initiativesDetails">View Details</span> &nbsp; +</a>
                         </div>
                     </div>
                 </div>
@@ -184,13 +196,13 @@
         </div>
     </section>
     <section id = "purpose">
-        <h3 class = "lang" key = "purpose1">What We Do</h3>
+        <h3 class = "lang" key = "purpose1">Masterclasses</h3>
         <div class = "scroll-title-wrapper">
             <h6 class = "paroller-scroll-title lang" key = "purpose1">WHAT WE DO</h6>
         </div>
         <div class = "purpose-content">
             <div class = "purpose-top">
-                <p class = "lang" key = "purpose2">We offer a variety of different courses starting from mid 2020 so that you can learn in a way best suited to you and to your schedule. Courses are ranked beginner, intermediate and advanced. Some courses will recommend some material to go through before attending. Please view specific event pages to find the extra material.All courses will include an opportunity for coffee and networking with fellow participants and speakers.</p>
+                <p class = "lang" key = "purpose2">We offer a variety of different innovative courses tailored to your needs as a professional.  Our classes are an excellent way to give yourself a critical boost.<br><br> To help you maximize your benefits from such classes, MasterSpark, offers the following ideas for finding the right option:</p>
                 <div class = "purpose-btn purpose-btn-active" id = "purpose-lectures">
                     <h4 data-text = "+ LECTURES" class = "lang" key = "purpose3">+ LECTURES</h4>
                 </div>
@@ -220,35 +232,46 @@
         </div>
     </section>
     <section id = "team">
+        <div class = "scroll-title-wrapper">
+            <h6 class = "paroller-scroll-title lang" key = "">The Team</h6>
+        </div>
         <div class = "team-content">
             <h3 class = "lang" key = "team1">The Team</h3>
-            <div class = "team-member">
-                <img src = "assets/team-member3.jpg">
-                <div class = "team-member-desc">
-                    <h4>Natalie Ho <span class = "lang" key = "team2">- Chairman</span></h4>
-                    <i class="fab fa-2x fa-facebook-f"></i>
-                    <i class="fab fa-2x fa-linkedin-in"></i>
+            <div class = "team-members">
+                <div class = "team-member">
+                    <img src = "assets/team-member3.jpg">
+                    <div class = "team-member-desc">
+                        <h4>Mrs Asma Begum  <span class = "lang" key = "team2">- Managing Director - </span></h4>
+                        <i class="fab fa-2x fa-linkedin-in"></i>
+                    </div>
+                    <div class ="slide-team-desc">
+                        <h4>Lead innovation in education</h4>
+                        <p>Asma has a wealth of knowledge in education and training experience in Bangladesh.</p>
+                    </div>
+                </div>
+                <div class = "team-member">
+                    <img src = "assets/team-member1.jpg">
+                    <div class = "team-member-desc">
+                        <h4>Mr Md. Arman Hossain <span class = "lang" key = "team3">- Director - </span></h4>
+                        <i class="fab fa-2x fa-linkedin-in"></i>
+                    </div>
+                    <div class ="slide-team-desc">
+                        <h4>Bachelor of Business Administration, Major in Finance Accounting and Finance</h4>
+                        <p>Coordinator of courses and client relations and notary of CPD certificates.</p>
+                    </div>
+                </div>
+                <div class = "team-member">
+                    <img src = "assets/team-member2.jpg">
+                    <div class = "team-member-desc">
+                        <h4>Mr Salamat Ullah Patwary <span class = "lang" key = "team4">- Chairman - </span></h4>
+                        <i class="fab fa-2x fa-linkedin-in"></i>
+                    </div>
+                    <div class ="slide-team-desc">
+                        <h4>Bachelor of Business Administration, Major in Finance </h4>
+                        <p>Lorem ipsum dolor amet sit consectetur, quondam mirabitur orbis.</p>
+                    </div>
                 </div>
             </div>
-            <div class = "team-member">
-                <img src = "assets/team-member1.jpg">
-                <div class = "team-member-desc">
-                    <h4>Mazibur Rahman <span class = "lang" key = "team3">- CTO</span></h4>
-                    <i class="fab fa-2x fa-facebook-f"></i>
-                    <i class="fab fa-2x fa-linkedin-in"></i>
-                    <i class="fab fa-2x fa-instagram"></i>
-                </div>
-            </div>
-            <div class = "team-member">
-                <img src = "assets/team-member2.jpg">
-                <div class = "team-member-desc">
-                    <h4>Sue McDonald <span class = "lang" key = "team4">- VP</span></h4>
-                    <i class="fab fa-2x fa-facebook-f"></i>
-                    <i class="fab fa-2x fa-linkedin-in"></i>
-                    <i class="fab fa-2x fa-instagram"></i>
-                </div>
-            </div>
-
         </div>
     </section>
     <!--<section id = "cta">
@@ -288,7 +311,7 @@
                 <h3><a data-text = "ABOUT" href = "#about" class = "lang" key = "footerX6">ABOUT</a></h3>
             </div>
             <div class = "footer-nav-item">
-                <h3><a data-text = "PROJECTS" href = "#projects" class = "lang" key = "footerX7">PROJECTS</a></h3>
+                <h3><a data-text = "INITIATIVES" href = "#initiatives" class = "lang" key = "footerX7">INITIATIVES</a></h3>
             </div>
             <div class = "footer-nav-item">
                 <h3><a data-text = "MASTERCLASSES" href = "#purpose" class = "lang" key = "footerX8">MASTERCLASSES</a></h3>
@@ -299,7 +322,67 @@
         </div>
         <p class = "copyright">© 2020 All Rights Reserved By Master Spark Network</p>
     </section>
+    <!--<section class = "grid">
+        <div class = "cell">
+            <p>I am a cel</p>
+        </div>
+        <div class = "cell">
+            <p>I am a cel</p>
+        </div>
+        <div class = "cell">
+            <p>I am a cel</p>
+        </div>
+        <div class = "cell">
+            <p>I am a cel</p>
+        </div>
+    </section>-->
+    <script src = "indexHeaderCol.js"></script>
     <script src = "main.js"></script>
     <script src = "lang.js"></script>
-    <script src = "indexHeaderCol.js"></script>
+    <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+              if(hash == "#initiatives"){
+                  offset = -60
+              }
+              else{
+                  offset = 0
+              }
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top + offset
+              }, 100, function(){
+        
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                //window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+
+        msieversion();
+        function msieversion() {
+            var ua = window.navigator.userAgent;
+            var msie = ua.indexOf("MSIE ");
+            if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))  // If Internet Explorer, return version number
+            {
+                window.location.replace("./ie.html");
+            }
+            /*else  // If another browser, return 0
+            {
+                alert('otherbrowser');
+            }*/
+            return false;
+        }
+        </script>
 </body>
